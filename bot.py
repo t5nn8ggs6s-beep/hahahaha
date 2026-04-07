@@ -44,7 +44,7 @@ async def cmd_start(message: types.Message | types.CallbackQuery):
         "Уверен, ты фанат Алиночки, но если ты по-настоящему преданный, "
         "ты можешь подарить ей немного звёздочек! ✨"
     )
-    image = FSInputFile("IMG_0219.jpeg")
+    image = FSInputFile("IMG_0205.webp")
     
     if isinstance(message, types.Message):
         await message.answer_photo(photo=image, caption=text, reply_markup=main_menu())
