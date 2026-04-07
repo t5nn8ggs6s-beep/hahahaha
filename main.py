@@ -55,7 +55,7 @@ async def cmd_start(message: types.Message | types.CallbackQuery):
 @dp.callback_query(F.data == "make_gift")
 async def choose_gift(callback: types.CallbackQuery):
     text = "Хорошо! Тогда выбери, сколько хочешь подарить Алиночке звёзд (Telegram Stars) 👇"
-    image = FSInputFile("image.png")
+    image = FSInputFile("IMG_0219.jpeg")
     
     await callback.message.answer_photo(photo=image, caption=text, reply_markup=stars_menu())
     await callback.answer()
